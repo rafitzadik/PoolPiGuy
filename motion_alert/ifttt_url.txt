@@ -1,0 +1,1 @@
+https://maker.ifttt.com/trigger/<REPLACE WITH YOUR IFTTT TRIGGER URL>
