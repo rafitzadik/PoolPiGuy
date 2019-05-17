@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1> {{water_status|e}} </h1>
+    <h1> Current View: </h1>
+    <img src="{{ url_for('pic', filename='cur_img.jpg') }}" alt="Current Image" style="width:800px;height:600px;">
+    <br>
+    <h1> Last Detection: </h1>
+    <img src="{{ url_for('pic', filename='last_det.jpg') }}" alt="Last Detetion Image" style="width:800px;height:600px;">
+{% endblock %}

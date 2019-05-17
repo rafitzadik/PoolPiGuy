@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pool Pi Guy</title>
+  </head>
+  <body>
+    <h1>The Pool Pi Guy </h1>
+    <font size="6">
+    <a href="{{ url_for('home') }}">Home</a>
+    &nbsp
+    <a href="{{ url_for('listdet') }}">List Detections</a>
+    &nbsp
+    <a href="{{ url_for('waterstartstop') }}">Start/Stop Water</a>
+    </font>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>

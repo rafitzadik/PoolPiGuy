@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p> Last Detection: </p>
+    <img src="{{ url_for('pic', filename='last_det.jpg') }}" alt="Current Image" style="width:800px;height:600px;">
+{% endblock %}

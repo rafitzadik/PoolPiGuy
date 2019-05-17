@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <font size="6">
+    <a href="{{ url_for('browsepic', filename=prev) }}"> Previous </a>
+    &nbsp
+    "{{title}}"
+    &nbsp
+    <a href="{{ url_for('browsepic', filename=next) }}"> Next</a>
+    <hr>    
+    <img src="{{ url_for('pic', filename=cur) }}" alt = "Detection" style="width:800px;height:600px;">
+    </font>
+{% endblock %}
+

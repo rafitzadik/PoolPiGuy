@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p> List of detections: </p>
+    <ul>
+        {% for det in detections %}
+        <li> <a href = "{{ det[0]|e }}"> {{ det[1]|e }} </a> </li>
+        {% else %}
+        <li><em>no detections found</em></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
