@@ -5,6 +5,10 @@
 activate_this_file = "/home/pi/.virtualenvs/tf/bin/activate_this.py"
 exec(open(activate_this_file).read(), {'__file__': activate_this_file})
 
+import sys
+sys.path.append('/home/pi/tensorflow1/models/research')
+sys.path.append('/home/pi/tensorflow1/models/research/slim')
+
 # Import packages
 import os
 import cv2
