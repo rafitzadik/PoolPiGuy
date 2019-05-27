@@ -2,7 +2,7 @@
 #
 
 #move to the correct virtualenv
-activate_this_file = "/home/pi/.virtualenvs/cv/bin/activate_this.py"
+activate_this_file = "/home/pi/.virtualenvs/tf/bin/activate_this.py"
 exec(open(activate_this_file).read(), {'__file__': activate_this_file})
 
 # Import packages
@@ -25,7 +25,7 @@ def main():
     CUR_IMG_NAME = "cur_img.jpg"
     LAST_DET_TMP = "last_det_tmp.jpg"
     LAST_DET_LINK = "last_det.jpg"
-    ifttt_url = open('ifttt_url.txt').readline().rstrip() #get the IFTTT URL
+    ifttt_url = open('/home/pi/poolpi/motion_alert/ifttt_url.txt').readline().rstrip() #get the IFTTT URL
     # Is there a graphical display attached?
     try:
         display_env = os.environ['DISPLAY']

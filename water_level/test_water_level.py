@@ -13,7 +13,7 @@ import datetime
 
 STATE_FILE_PATH = '/home/pi/poolpi/water_level/status.txt'
 def notification(text):
-    ifttt_url = open('ifttt_url.txt').readline().rstrip() #get the IFTTT URL
+    ifttt_url = open('/home/pi/poolpi/water_level/ifttt_url.txt').readline().rstrip() #get the IFTTT URL
     try:
         r = requests.post(ifttt_url, json={"value1":text})
     except:
