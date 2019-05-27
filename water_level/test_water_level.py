@@ -1,3 +1,8 @@
+#move to the correct virtualenv
+activate_this_file = "/home/pi/.virtualenvs/webserv/bin/activate_this.py"
+exec(open(activate_this_file).read(), {'__file__': activate_this_file})
+
+
 import gpiozero
 import time
 import requests

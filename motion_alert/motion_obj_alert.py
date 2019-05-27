@@ -1,6 +1,10 @@
 ######## Raspberry Pi Object Detection on Motion Areas Using Tensorflow Classifier #########
 #
 
+#move to the correct virtualenv
+activate_this_file = "/home/pi/.virtualenvs/cv/bin/activate_this.py"
+exec(open(activate_this_file).read(), {'__file__': activate_this_file})
+
 # Import packages
 import os
 import cv2
