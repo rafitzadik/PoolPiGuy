@@ -5,4 +5,4 @@ Raspberry Pi based system for:
 2. Pool water level monitoring and refilling using a water level sensor connected to GPIO and a solenoid valve connected to a Relay HAT.
 3. All viewable through a web interface, with mobile alerts courtesy of ifttt.
 
-Please see my instructable HERE for details of hardware and software setup, and how to use this code.
+Please see my [instructable](https://www.instructables.com/id/Pool-Pi-Guy-AI-Driven-Alarm-System-and-Pool-Monito/) for details of hardware and software setup, and how to use this code.
